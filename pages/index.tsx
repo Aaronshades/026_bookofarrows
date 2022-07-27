@@ -17,19 +17,17 @@ const Login = () => {
   }, [router, user]);
 
   return (
-    <>
-      <div className={styles.welcomeContainer}>
-        <h2>Velkommen!</h2>
-        <p>Vi gir deg</p>
-        <ul className={styles.list}>
-          <li>skytterprofil der du kan large skytternr. og data om ditt utstyr</li>
-          <li>beregnet siktemerker med avansert beregningsmodell</li>
-        </ul>
-        <div className={styles.loginContainer}>
-          <Button onClick={googleLogin}>Logg in med Google</Button>
-        </div>
+    <div className={styles.welcomeContainer}>
+      <h2>Velkommen skytter!</h2>
+      <p>Vi gir deg</p>
+      <ul className={styles.list}>
+        <li>skytterprofil der du kan large skytternr. og data om ditt utstyr</li>
+        <li>beregnet siktemerker med avansert beregningsmodell</li>
+      </ul>
+      <div className={styles.loginContainer}>
+        <Button onClick={googleLogin}>Logg in med Google</Button>
       </div>
-    </>
+    </div>
   );
 };
 
